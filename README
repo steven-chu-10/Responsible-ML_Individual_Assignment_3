@@ -1,0 +1,91 @@
+# ── README ────────────────────────────────────────────────────────────────────
+
+readme = """
+# Individual Assignment 3 -- Disparate Impact Audit
+## DNSC 6330: Responsible Machine Learning
+### George Washington University | Spring 2026
+
+---
+
+## Overview
+
+This assignment performs a disparate impact audit of the COMPAS recidivism
+risk scoring system using the Broward County cohort (N = 6,172). Building on
+the preprocessing pipeline from Assignment 1 and the explainability audit from
+Assignment 2, this notebook measures group-level fairness across race and sex
+using legally grounded bias metrics.
+
+---
+
+## Tasks
+
+### Task 1: AIR, ME, and SMD
+Computes Adverse Impact Ratio (AIR), Marginal Effect (ME), and Standardized
+Mean Difference (SMD) for race and sex using both the solas-ai disparity
+library and manual implementation. Confirms both methods produce identical
+results.
+
+### Task 2: Intersectional Subgroup Analysis
+Builds race x sex interaction subgroups and computes AIR for each. Reports
+the worst-group AIR and interprets the finding in the context of
+intersectionality.
+
+### Task 3: FPR and FNR Disparity
+Computes False Positive Rate (FPR) and False Negative Rate (FNR) by race.
+Tests the Black vs. White disparity for statistical significance using a
+two-proportion z-test.
+
+### Task 4: Publication-Quality Figure
+Produces a grouped bar chart of FPR and FNR by race with Caucasian as the
+reference group. Saved as error_rate_disparity.png.
+
+### Task 5: Compliance Memo
+A 300-word memo addressed to a hypothetical regulator summarizing audit
+findings, metrics used, and limitations.
+
+---
+
+## Dependencies
+
+- pandas, numpy, matplotlib, scipy
+- statsmodels
+- solas-ai (install via: pip install solas-ai)
+- scikit-learn, shap, lime, dice-ml (from Assignments 1 and 2)
+
+---
+
+## How to Run
+
+1. Open the notebook in Google Colab
+2. Run all cells from top to bottom
+3. The Assignment 3 section begins after the Individual Assignment 3 header
+
+---
+
+## Data
+
+COMPAS Broward County recidivism dataset loaded directly from the ProPublica
+GitHub repository. Preprocessing follows the pipeline established in
+Assignment 1.
+
+---
+
+## AI Use Disclaimer
+
+An AI model was used as a coding assistant in the development of this
+assignment. Specifically, it was used to help debug code, adapt lecture
+notebook code for compatibility with the installed version of the solas-ai
+library, and structure the compliance memo. All code was reviewed, understood,
+and executed by me. Conceptual interpretation of results and
+analytical decisions were made independently.
+
+---
+
+## Submission
+
+Submitted via email to s.akinwumi@gwu.edu
+GitHub repository: Responsible-ML
+Student ID: G31946226
+"""
+
+print(readme)
